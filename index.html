@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>BMI Calculator</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <h4>Programmed and designed by <span class="Yaman">Yaman</span>!</h4>
+        <div class="calculator">
+            <div class="slider-container">
+                <label for="height">Height (cm): <span id="heightValue">160 cm</span></label>
+                <input type="range" id="height" min="100" max="220" value="160">
+            </div>
+            <div class="slider-container">
+                <label for="weight">Weight (kg): <span id="weightValue">70 kg</span></label>
+                <input type="range" id="weight" min="30" max="150" value="70">
+            </div>
+            <button id="calculate">Calculate BMI</button>
+            <div id="result">
+                <h2>Your BMI:</h2>
+                <p id="bmiValue"></p>
+                <p id="bmiCategory"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
